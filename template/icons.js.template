@@ -1,0 +1,15 @@
+import { Platform } from 'react-native';
+
+const isAndroid = Platform.OS === 'android';
+
+const Icons = {
+    <%_ for (item of props.items) { -%>
+    <%- item.name %>: '\u<%- item.value %>',
+    <%_ } -%>
+};
+
+<%_ for (name in props.nonPlatformItems) { -%>
+Icons.<%- props.nonPlatformItems[name].name %> = isAndroid ? Icons.<%- props.nonPlatformItems[name].android %> : Icons.<%- props.nonPlatformItems[name].ios %>;
+<%_ } -%>
+
+export default Icons;
