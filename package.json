@@ -1,22 +1,6 @@
 {
-  "version": "1.0.0",
   "name": "font-generator",
-  "main": "lib/index.js",
-  "scripts": {
-    "start": "babel-node src/index.js",
-    "lint": "eslint .",
-    "build": "babel src -d lib",
-    "prepublish": "npm run build"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.9.0",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-flow": "^6.23.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-register": "^6.9.0",
-    "chai": "^3.5.0",
-    "mocha": "^2.5.3"
-  },
+  "version": "1.0.0",
   "dependencies": {
     "babel-generator": "^6.24.1",
     "babel-template": "^6.24.1",
@@ -28,5 +12,19 @@
     "svg2ttf": "^4.0.2",
     "svgicons2svgfont": "^5.0.0"
   },
-  "license": "ISC"
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.9.0"
+  },
+  "license": "ISC",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "lint": "eslint .",
+    "prepublish": "npm run build",
+    "start": "babel-node src/index.js"
+  }
 }
