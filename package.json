@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "babel-generator": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
     "babel-template": "^6.24.1",
     "babel-types": "^6.24.1",
     "ejs": "^2.5.6",
@@ -10,7 +11,8 @@
     "glob": "^7.1.1",
     "mkdirp": "^0.5.1",
     "svg2ttf": "^4.0.2",
-    "svgicons2svgfont": "^5.0.0"
+    "svgicons2svgfont": "^5.0.0",
+    "yargs": "^8.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
@@ -25,6 +27,7 @@
     "build": "babel src -d lib",
     "lint": "eslint .",
     "prepublish": "npm run build",
-    "start": "babel-node src/index.js"
+    "start": "babel-node src/index.js",
+    "watch": "babel -w -d ./lib ./src"
   }
 }

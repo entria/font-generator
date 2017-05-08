@@ -1,0 +1,7 @@
+const Icons = {
+    <%_ for (item of props.items) { -%>
+    <%- item.name %>: '\u<%- item.value %>',
+    <%_ } -%>
+};
+
+export default Icons;
