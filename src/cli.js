@@ -16,16 +16,16 @@ const usage = 'Usage: $0 iconPath';
 const docs = 'Documentation: https://github.com/entria/font-generator';
 const options = {
   fontName: {
-    default: 'FontNatura',
+    default: 'MyFont',
     description: 'generated font name',
   },
   dest: {
     default: 'dist',
     description: 'destination folder',
   },
-  icons: {
-    default: 'icons',
-    description: 'svg icons folder',
+  iconsGlob: {
+    default: './icons/**/*.svg',
+    description: 'svg icons glob',
   },
 };
 
@@ -37,12 +37,10 @@ export function run(argv?: Argv, project?: Path) {
     .help()
     .argv;
 
-  console.log('argv: ', argv);
-
   execute({
     fontName: argv.fontName,
     dest: argv.dest,
-    icons: argv.icons,
+    iconsGlob: argv.iconsGlob,
   });
 }
 
