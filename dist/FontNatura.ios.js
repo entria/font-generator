@@ -23,9 +23,10 @@ const Icons = {
     profile: '\uf133',
     remove: '\uf134',
     salesProfile: '\uf135',
-    selectEmpty: '\uf136',
-    selectFilled: '\uf137',
-    tasks: '\uf138',
+    search: '\uf136',
+    selectEmpty: '\uf137',
+    selectFilled: '\uf138',
+    tasks: '\uf139',
 };
 
 export default Icons;
