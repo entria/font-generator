@@ -1,6 +1,9 @@
 {
   "name": "font-generator",
   "version": "1.0.0",
+  "bin": {
+    "font-generator": "./bin/font-generator"
+  },
   "dependencies": {
     "babel-generator": "^6.24.1",
     "babel-polyfill": "^6.23.0",

@@ -6,7 +6,9 @@ It also generates a JavaScript file with named codepoints
 
 ## Install
 
+```bash
 npm i -g @entria/font-generator
+```
 
 ## Usage
 font-generator --fontName MyFont --dest outpath --iconsGlob ./icons/**/*.svg
