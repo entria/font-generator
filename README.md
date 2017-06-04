@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
 
 export { MyFontIcons };
 export default MyFontIcon;
-```jsx
+```
 
 
 The icons should follow this folder convention:
