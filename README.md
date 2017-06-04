@@ -11,7 +11,9 @@ npm i -g @entria/font-generator
 ```
 
 ## Usage
+```bash
 font-generator --fontName MyFont --dest outpath --iconsGlob ./icons/**/*.svg
+```
 
 ## Use like this
 
