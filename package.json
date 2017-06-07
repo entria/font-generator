@@ -29,6 +29,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
+    "flow": "flow",
     "lint": "eslint .",
     "prepublish": "npm run build",
     "start": "babel-node src/index.js",
