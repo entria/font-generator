@@ -42,11 +42,17 @@ const writeFile = (content, dest) => {
   fs.writeFileSync(dest, content);
 };
 
+type CliOptions = {
+  fontName: string,
+  dest: string,
+  iconsGlob: string,
+};
+
 export default async function execute({
   fontName = 'MyFont',
   dest = 'dist',
   iconsGlob = './icons/**/*.svg',
-} = {}) {
+}: CliOptions = {}) {
   try {
     const files = glob.sync(iconsGlob);
 
