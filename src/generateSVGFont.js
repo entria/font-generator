@@ -27,7 +27,7 @@ const generateSvgFontStream = (options, done) => {
     round,
   };
 
-  svgOptions.log = () => {};
+  //svgOptions.log = () => {};
 
   const fontStream = svgicons2svgfont(svgOptions)
     .on('data', (data) => {
@@ -55,7 +55,7 @@ const generateSvgFontStream = (options, done) => {
  * Promisify generateSvgFontStream
  * @param options
  */
-const generateSvgFontAsync = options =>
+const generateSvgFontAsync = (options: Object) =>
   new Promise((resolve, reject) => {
     generateSvgFontStream(options, (err, data) => {
       if (err) {

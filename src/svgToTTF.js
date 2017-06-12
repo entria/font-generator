@@ -9,7 +9,7 @@ import svg2ttf from 'svg2ttf';
  * @param options
  * @returns {Buffer}
  */
-const generateTTFfromSVGFont = (svgFont, options) => {
+const generateTTFfromSVGFont = (svgFont: string, options: Object) => {
   const font = svg2ttf(svgFont, options.formatOptions.ttf);
 
   return new Buffer(font.buffer);
