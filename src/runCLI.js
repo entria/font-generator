@@ -83,7 +83,7 @@ export default async function execute({
     const ttfFontPath = path.join(dest, `${fontName}.ttf`);
     writeFile(ttfFont, ttfFontPath);
 
-    const pathTemplate = './template/icons.platform.js.template';
+    const pathTemplate = path.join(__dirname, '../template/icons.platform.js.template');
     const templateContent = jetpack.read(pathTemplate);
 
     const data = jsData(codepoints);
