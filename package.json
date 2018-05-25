@@ -1,6 +1,6 @@
 {
   "name": "@entria/font-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "font-generator": "./bin/font-generator"
   },
