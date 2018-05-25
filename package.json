@@ -33,6 +33,9 @@
     "flow": "flow",
     "lint": "eslint .",
     "prepublish": "npm run build",
+    "release:major": "npm version major && git push --follow-tags",
+    "release:minor": "npm version minor && git push --follow-tags",
+    "release:patch": "npm version patch && git push --follow-tags",
     "start": "babel-node src/index.js",
     "watch": "babel -w -d ./lib ./src"
   }
